@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>streamchunk-lab — topology-aware progressive mesh chunks</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; font: 13px/1.45 ui-monospace, Menlo, monospace; background: #0b0e13; color: #d7dee9; }
+  #app { display: grid; grid-template-columns: 320px 1fr; height: 100vh; }
+  aside { padding: 14px; border-right: 1px solid #1e2733; overflow: auto; }
+  h1 { font-size: 15px; margin: 0 0 4px; color: #fff; }
+  .sub { color: #7f8b9e; margin-bottom: 12px; }
+  label { display: block; margin: 10px 0 4px; color: #9fb0c8; }
+  select, input[type=range] { width: 100%; }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  td { padding: 2px 0; border-bottom: 1px solid #171f2a; }
+  td:last-child { text-align: right; color: #fff; }
+  .ok { color: #4ade80; } .bad { color: #f87171; }
+  canvas { display: block; }
+  .hint { color: #6b7789; margin-top: 10px; }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="app">
+  <aside>
+    <h1>streamchunk-lab</h1>
+    <div class="sub">progressive mesh delivery planner</div>
+    <label>mesh</label>
+    <select id="mesh"></select>
+    <label>planner</label>
+    <select id="mode">
+      <option value="greedy">greedy (edge-connected)</option>
+      <option value="grid">baseline: spatial grid</option>
+      <option value="sequential">baseline: index order</option>
+    </select>
+    <label>chunks loaded: <span id="k">0</span></label>
+    <input id="slider" type="range" min="0" max="1" value="0" step="1">
+    <table id="stats"></table>
+    <div id="hashcheck" class="hint"></div>
+    <div class="hint">The numbers on the right are computed by the same <code>src/core.mjs</code> that <code>bench/verify.mjs</code> asserts against, then compared with the node-baked <code>data/reference.json</code>.</div>
+  </aside>
+  <main id="view"></main>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

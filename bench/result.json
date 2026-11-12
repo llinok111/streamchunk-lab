@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-11-12T20:23:39.506Z",
+  "mesh": "torus",
+  "triangles": 4480,
+  "vertices": 2240,
+  "chunks": 8,
+  "budgetTris": 600,
+  "reps": 7,
+  "batch": 20,
+  "env": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "arch": "x64",
+    "cpus": 4,
+    "model": "AMD EPYC 7K62 48-Core Processor"
+  },
+  "greedy": {
+    "cold_ms": 15.3885,
+    "warm": {
+      "n": 7,
+      "min": 11.5334,
+      "median": 11.6959,
+      "p95": 12.4502,
+      "max": 12.4502,
+      "mean": 11.759,
+      "stddev": 0.2967,
+      "rsd_pct": 2.523,
+      "samples": [
+        11.5334,
+        11.5444,
+        11.5676,
+        11.6959,
+        11.7407,
+        11.7803,
+        12.4502
+      ]
+    }
+  },
+  "grid": {
+    "cold_ms": 1.6459,
+    "warm": {
+      "n": 7,
+      "min": 0.7715,
+      "median": 0.7881,
+      "p95": 0.8279,
+      "max": 0.8279,
+      "mean": 0.7925,
+      "stddev": 0.018,
+      "rsd_pct": 2.267,
+      "samples": [
+        0.7715,
+        0.7753,
+        0.7836,
+        0.7881,
+        0.7963,
+        0.8047,
+        0.8279
+      ]
+    }
+  },
+  "sequential": {
+    "cold_ms": 0.1819,
+    "warm": {
+      "n": 7,
+      "min": 0.1448,
+      "median": 0.1539,
+      "p95": 0.1759,
+      "max": 0.1759,
+      "mean": 0.1566,
+      "stddev": 0.0109,
+      "rsd_pct": 6.977,
+      "samples": [
+        0.1448,
+        0.1449,
+        0.1503,
+        0.1539,
+        0.158,
+        0.1682,
+        0.1759
+      ]
+    }
+  },
+  "verdict": {
+    "greedy_median_ms": 11.6959,
+    "grid_median_ms": 0.7881,
+    "median_speedup_vs_grid": 0.067,
+    "cold_greedy_ms": 15.3885,
+    "cold_grid_ms": 1.6459,
+    "note": "quality metrics (seam/coverage/connectivity) come from bench/verify.mjs, not timing"
+  }
+}

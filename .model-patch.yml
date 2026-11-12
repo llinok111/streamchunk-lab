@@ -1,0 +1,4 @@
+- id: agent-default-model
+  config:
+    provider: luoxi-gateway
+    model: auto/deepseek-v4.1-flash

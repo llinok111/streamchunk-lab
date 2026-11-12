@@ -1,0 +1,134 @@
+{
+  "generatedBy": "tools/gen-sample.mjs",
+  "reference": [
+    {
+      "name": "torus",
+      "maxTris": 600,
+      "chunkCount": 8,
+      "greedy": {
+        "seamOverhead": 0.23928571428571432,
+        "quartiles": [
+          0.35004365594289244,
+          0.6452616594949141,
+          0.8672698655348196,
+          0.9999999999999978
+        ],
+        "coverageAUC": 0.715643795243156,
+        "allConnected": true,
+        "hash": 3726352437,
+        "bytes": 60192,
+        "maxChunkTris": 600
+      },
+      "grid": {
+        "seamOverhead": 0.28392857142857153,
+        "quartiles": [
+          0.28432504520087004,
+          0.49999999999999833,
+          0.7156749547991268,
+          0.9999999999999966
+        ],
+        "coverageAUC": 0.6249999999999979,
+        "connectedChunks": 2,
+        "hash": 219131573,
+        "bytes": 61392
+      },
+      "sequential": {
+        "seamOverhead": 0.1428571428571428,
+        "quartiles": [
+          0.2499999999999991,
+          0.4999999999999983,
+          0.7499999999999973,
+          0.9999999999999964
+        ],
+        "coverageAUC": 0.6249999999999978,
+        "connectedChunks": 8
+      }
+    },
+    {
+      "name": "bumpy-sphere",
+      "maxTris": 240,
+      "chunkCount": 9,
+      "greedy": {
+        "seamOverhead": 0.37314814814814823,
+        "quartiles": [
+          0.5143224960246342,
+          0.7807694194242764,
+          0.9439499788115753,
+          1.000000000000001
+        ],
+        "coverageAUC": 0.8097604735651218,
+        "allConnected": true,
+        "hash": 1236729621,
+        "bytes": 30276,
+        "maxChunkTris": 240
+      },
+      "grid": {
+        "seamOverhead": 0.49351851851851847,
+        "quartiles": [
+          0.382462259656254,
+          0.5184188444095778,
+          0.7229684922138387,
+          1.0000000000000016
+        ],
+        "coverageAUC": 0.6559623990699179,
+        "connectedChunks": 1,
+        "hash": 4092938893,
+        "bytes": 31836
+      },
+      "sequential": {
+        "seamOverhead": 0.3148148148148149,
+        "quartiles": [
+          0.2613183395908366,
+          0.5818721482344112,
+          0.872834306866144,
+          1.0000000000000016
+        ],
+        "coverageAUC": 0.6790061986728484,
+        "connectedChunks": 9
+      }
+    },
+    {
+      "name": "terrain",
+      "maxTris": 600,
+      "chunkCount": 12,
+      "greedy": {
+        "seamOverhead": 0.20907955018742186,
+        "quartiles": [
+          0.40516756591081704,
+          0.7320162675786083,
+          0.9909930291455183,
+          0.999999999999996
+        ],
+        "coverageAUC": 0.7820442156587349,
+        "allConnected": true,
+        "hash": 1476346981,
+        "bytes": 62484,
+        "maxChunkTris": 600
+      },
+      "grid": {
+        "seamOverhead": 0.26780508121615987,
+        "quartiles": [
+          0.2458000874799374,
+          0.49999999999999845,
+          0.7541999125200592,
+          0.9999999999999967
+        ],
+        "coverageAUC": 0.624999999999998,
+        "connectedChunks": 2,
+        "hash": 2846296453,
+        "bytes": 64176
+      },
+      "sequential": {
+        "seamOverhead": 0.22448979591836737,
+        "quartiles": [
+          0.24580008747993734,
+          0.49999999999999845,
+          0.7541999125200595,
+          0.9999999999999967
+        ],
+        "coverageAUC": 0.624999999999998,
+        "connectedChunks": 12
+      }
+    }
+  ]
+}
